@@ -48,6 +48,17 @@ describe('All tests', function() {
         done();
     });
 
+    it("wrong typeof ", function(done) {
+
+            try {
+                var output = gltv();
+            } catch(ex) {
+                assert(ex.message, "Expected template to be a string");
+            }
+
+        done();
+    });
+
 });
 
 
