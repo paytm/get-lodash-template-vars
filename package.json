@@ -1,6 +1,6 @@
 {
   "name": "get-lodash-template-vars",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Retrieve list of vars in a lodash template",
   "main": "lib/index.js",
   "scripts": {
