@@ -4,12 +4,9 @@
   "description": "Retrieve list of vars in a lodash template",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel src --out-dir lib",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "lint": "eslint ./ --ignore-pattern node_modules/ --ignore-pattern lib",
-    "test": "npm run lint && npm run compile && nyc ava"
+    "test": "istanbul cover _mocha -- -R spec"
   },
-  "repository": "dustinspecker/get-lodash-template-vars",
+  "repository": "paytm/get-lodash-template-vars",
   "keywords": [
     "lodash",
     "template",
@@ -17,41 +14,18 @@
     "vars"
   ],
   "author": {
-    "name": "Dustin Specker",
-    "email": "DustinSpecker@DustinSpecker.com",
-    "url": "github.com/dustinspecker"
+    "name": "paytm",
+    "email": "shrey.agarwal@paytm.com",
+    "url": "github.com/paytm"
   },
   "license": "MIT",
   "files": [
     "lib"
   ],
-  "dependencies": {
-    "array-uniq": "^1.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "ava": "^0.14.0",
-    "babel-cli": "^6.4.0",
-    "babel-eslint": "^6.0.0-beta.6",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-register": "^6.4.3",
-    "coveralls": "^2.11.6",
-    "eslint": "^2.4.0",
-    "eslint-config-dustinspecker": "^1.1.0",
-    "eslint-plugin-no-use-extend-native": "^0.3.1",
-    "eslint-plugin-xo": "^0.4.0",
-    "nyc": "^6.1.1"
-  },
-  "ava": {
-    "files": [
-      "tests/test.js"
-    ],
-    "require": [
-      "babel-register"
-    ]
-  },
-  "nyc": {
-    "exclude": [
-      "tests"
-    ]
+    "mocha": "~2.5.3",
+    "istanbul": "~0.4.3",
+    "coveralls": "~2.11.9"
   }
 }
