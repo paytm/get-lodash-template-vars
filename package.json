@@ -6,7 +6,10 @@
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec"
   },
-  "repository": "paytm/get-lodash-template-vars",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://@github.com:paytm/get-lodash-template-vars.git"
+  },
   "keywords": [
     "lodash",
     "template",
@@ -19,9 +22,6 @@
     "url": "github.com/paytm"
   },
   "license": "MIT",
-  "files": [
-    "lib"
-  ],
   "dependencies": {},
   "devDependencies": {
     "mocha": "~2.5.3",
