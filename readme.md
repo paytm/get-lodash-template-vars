@@ -11,12 +11,12 @@ npm install --save get-lodash-template-vars
 
 ## Usage
 ```javascript
-import getLodashTemplateVars from 'get-lodash-template-vars'
+var GLTV = require('get-lodash-template-vars'),
 
-getLodashTemplateVars('<%- name %> <%= age %> <%=name%>')
+GLTV('<%- name %> <%= age %> <%=name%>')
   // => ['name', 'age']
 
-getLodashTemplateVars('Hello world!')
+GLTV('Hello world!')
   // => []
 ```
 
